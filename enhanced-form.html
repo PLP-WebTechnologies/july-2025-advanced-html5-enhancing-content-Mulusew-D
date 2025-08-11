@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biomedical Engineering Department – Hallelujah General Hospital</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            background-color: #f8f9fa;
+        }
+        header, section, footer {
+            margin-bottom: 30px;
+            padding: 15px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 0 5px rgba(0,0,0,0.1);
+        }
+        h1, h2, h3 {
+            color: #003366;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+        table, th, td {
+            border: 1px solid #ccc;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+        }
+        fieldset {
+            border: 1px solid #ccc;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+        legend {
+            font-weight: bold;
+        }
+        label {
+            display: block;
+            margin-top: 8px;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 4px;
+        }
+        input[type="submit"] {
+            background-color: #003366;
+            color: white;
+            border: none;
+            cursor: pointer;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        input[type="submit"]:hover {
+            background-color: #0055a5;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Biomedical Engineering Department</h1>
+    <p>Hallelujah General Hospital – Ensuring safe, effective, and well-maintained medical equipment for optimal patient care.</p>
+</header>
+
+<section>
+    <h2>Department Responsibilities</h2>
+    <ul>
+        <li>Routine maintenance and calibration of medical equipment</li>
+        <li>Repair of faulty devices and systems</li>
+        <li>Equipment safety checks and compliance inspections</li>
+        <li>Training clinical staff on proper equipment use</li>
+        <li>Procurement and evaluation of new medical technologies</li>
+    </ul>
+</section>
+
+<section>
+    <h2>Interactions with Other Departments</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Department</th>
+                <th>Interaction Type</th>
+                <th>Example Task</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>ICU</td>
+                <td>Equipment Support</td>
+                <td>Calibrating ventilators and monitoring systems</td>
+            </tr>
+            <tr>
+                <td>Surgery</td>
+                <td>Preventive Maintenance</td>
+                <td>Checking electrosurgical units before operations</td>
+            </tr>
+            <tr>
+                <td>Radiology</td>
+                <td>Technical Assistance</td>
+                <td>Servicing ultrasound and X-ray machines</td>
+            </tr>
+            <tr>
+                <td>Laboratory</td>
+                <td>Calibration</td>
+                <td>Ensuring analyzers give accurate results</td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+
+<section>
+    <h2>Media Highlights</h2>
+    <figure>
+        <img src="biomedical_lab.jpg" alt="Biomedical Lab" width="100%">
+        <figcaption>Biomedical engineers at work in the equipment maintenance lab.</figcaption>
+    </figure>
+    <audio controls>
+        <source src="hospital_announcement.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    <video controls width="100%">
+        <source src="equipment_training.mp4" type="video/mp4">
+        Your browser does not support the video element.
+    </video>
+</section>
+
+<section>
+    <h2>Equipment Service Request Form</h2>
+    <form action="#" method="post">
+        <fieldset>
+            <legend>Requester Information</legend>
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required minlength="3" placeholder="Enter your full name">
+
+            <label for="department">Department:</label>
+            <select id="department" name="department" required>
+                <option value="">-- Select Department --</option>
+                <option value="icu">ICU</option>
+                <option value="surgery">Surgery</option>
+                <option value="radiology">Radiology</option>
+                <option value="laboratory">Laboratory</option>
+            </select>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required placeholder="you@example.com" autocomplete="email">
+
+            <label for="phone">Contact Number:</label>
+            <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="10-digit phone number" required>
+        </fieldset>
+
+        <fieldset>
+            <legend>Equipment Details</legend>
+            <label for="equipment-name">Equipment Name:</label>
+            <input type="text" id="equipment-name" name="equipment-name" required>
+
+            <label for="serial">Serial Number:</label>
+            <input type="text" id="serial" name="serial" placeholder="If available">
+
+            <label for="issue">Describe the Issue:</label>
+            <textarea id="issue" name="issue" rows="4" required minlength="10"></textarea>
+
+            <label>
+                <input type="checkbox" name="urgent" value="yes"> Mark as Urgent
+            </label>
+        </fieldset>
+
+        <input type="submit" value="Submit Request">
+    </form>
+</section>
+
+<footer>
+    <p>&copy; 2025 Hallelujah General Hospital – Biomedical Engineering Department</p>
+</footer>
+
+</body>
+</html>
